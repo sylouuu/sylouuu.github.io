@@ -1,0 +1,12 @@
+{
+    "name": "sylouuu",
+    "version": "0.0.1",
+    "description": "",
+    "main": "gulpfile.js",
+    "devDependencies": {
+        "gulp-minify-css": "~0.2.0",
+        "gulp": "~3.6.0",
+        "gulp-less": "~1.2.1",
+        "gulp-jshint": "~1.5.1"
+    }
+}
