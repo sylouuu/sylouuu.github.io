@@ -12,6 +12,18 @@ body, html {
         font-weight: 400;
     }
 
+    .navbar {
+
+        img.my-pic {
+            width: 32px;
+            height: 32px;
+            float: left;
+            margin-top: 9px;
+            margin-right: 15px;
+            border-radius: 50px;
+        }
+    }
+
     section {
 
         &.intro-header {
@@ -47,16 +59,30 @@ body, html {
 
         &.content-section-a {
             background-color: #f8f8f8;
-            padding: 50px 0;
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            #desoslide_demo_main_image {
+                margin-bottom: 20px;
+            }
+
+            // img[alt="tabs"] {
+            //     margin-bottom: 50px;
+            // }
+
+            .website-settings-divider {
+                width: 100%;
+            }
         }
 
         &.content-section-b {
             border-top: 1px solid #e7e7e7;
             border-bottom: 1px solid #e7e7e7;
-            padding: 50px 0;
+            padding-top: 100px;
+            padding-bottom: 100px;
         }
 
-        &.banner {
+        &.blog {
             padding: 100px 0;
             color: #f8f8f8;
             background: url(../img/banner-bg.jpg) no-repeat center center;
@@ -72,9 +98,9 @@ body, html {
                 margin-bottom: 0;
             }
 
-            .banner-social-buttons {
-                float: right;
-                margin-top: 0;
+            .banner-link-buttons {
+                margin-top: 50px;
+                margin-left: 150px;
             }
         }
 
@@ -89,25 +115,6 @@ body, html {
         }
     }
 
-
-    .network-name {
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 400;
-        letter-spacing: 2px;
-    }
-
-
-
-
-    // footer {
-    //     background-color: #f8f8f8;
-    //     padding: 50px 0;
-    // }
-
-    // p.copyright {
-    //     margin: 15px 0 0;
-    // }
 }
 
 

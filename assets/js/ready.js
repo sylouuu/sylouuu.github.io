@@ -12,27 +12,28 @@ $(function() {
        keyboard: true
     });
 
-    $('a[href="#about"]').on('click', function(e) {
+    $('.navbar-nav a[data-section]').on('click', function(e) {
         e.preventDefault();
 
-        $('#main').moveTo(1);
+        $('#main').moveTo(parseInt($(this).data('section'), 10));
     });
 
-    $('a[href="#desoslide"]').on('click', function(e) {
-        e.preventDefault();
-
-        $('#main').moveTo(2);
+    /* Third demo */
+    $('#desoslide_demo_thumbs').desoSlide({
+        main: {
+            container: '#desoslide_demo_main_image',
+            cssClass: 'img-responsive'
+        },
+        auto: {
+            start: false
+        },
+        effect: 'sideFadeBig',
+        overlay: 'hover',
+        caption: true,
+        controls: {
+            enable: false,
+            keys: false
+        }
     });
 
-    $('a[href="#phprestclient"]').on('click', function(e) {
-        e.preventDefault();
-
-        $('#main').moveTo(3);
-    });
-
-    $('a[href="#websitesettings"]').on('click', function(e) {
-        e.preventDefault();
-
-        $('#main').moveTo(4);
-    });
 });
