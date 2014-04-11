@@ -1,16 +1,24 @@
+// Common colors
 @white: #f8f8f8;
 @gray-light: #e7e7e7;
 
+// Screen sizes
 @screen-sm: 767px;
 @screen-md: 980px;
 @screen-lg: 1170px;
+
+// Social colors
+@twitter: #00A0D1;
+@facebook: #3B5998;
+@google-plus: #C63D2D;
+@linkedin: #4875B4;
 
 body, html {
     height: 100%;
     width: 100%;
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: 700;
     }
 
@@ -39,7 +47,7 @@ body, html {
     section {
 
         &.intro-header {
-            padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+            padding-top: 50px;
             padding-bottom: 50px;
             color: @white;
             background: url(../img/intro-bg.jpg) no-repeat center center;
@@ -122,6 +130,26 @@ body, html {
 
             ul.banner-link-buttons {
                 margin-top: 30px;
+            }
+        }
+
+        &.contact {
+            a {
+                &.share-twitter {
+                    color: @twitter;
+                }
+
+                &.share-facebook {
+                    color: @facebook;
+                }
+
+                &.share-google-plus {
+                    color: @google-plus;
+                }
+
+                &.share-linkedin {
+                    color: @linkedin;
+                }
             }
         }
 

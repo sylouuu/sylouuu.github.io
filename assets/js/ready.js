@@ -35,4 +35,11 @@ $(function() {
     // WOW
     new WOW().init();
 
+    // Tooltip
+    $('[data-toggle="tooltip"]').tooltip({
+        container:  'body',
+        trigger:    'hover',
+        html:       true
+    });
+
 });

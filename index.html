@@ -1,284 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <title>Sylvain V.</title>
 
-    <title>Sylvain V.</title>
+        <!-- Core CSS -->
+        <link href="assets/css/libs/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Core CSS -->
-    <link href="assets/css/libs/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Custom Google Web Font -->
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
 
-    <!-- Custom Google Web Font -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <!-- Add custom CSS here -->
+        <link href="assets/css/libs/animate.css" rel="stylesheet">
+        <link href="assets/css/libs/onepage-scroll.css" rel="stylesheet">
+        <link href="assets/css/libs/jquery.desoslide.min.css" rel="stylesheet">
+        <link href="assets/css/home.css" rel="stylesheet">
 
-    <!-- Add custom CSS here -->
-    <link href="assets/css/libs/animate.css" rel="stylesheet">
-    <link href="assets/css/libs/onepage-scroll.css" rel="stylesheet">
-    <link href="assets/css/libs/jquery.desoslide.min.css" rel="stylesheet">
-    <link href="assets/css/home.css" rel="stylesheet">
+    </head>
+    <body>
 
-</head>
-
-<body>
-
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <img src="https://avatars1.githubusercontent.com/u/2300259?s=460" alt="" class="my-pic img-responsive wow rotateIn">
-
-                <a class="navbar-brand" href="./">Sylvain V.</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#about" data-section="1">About</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Projects <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#desoslide" data-section="2">desoSlide</a></li>
-                            <li><a href="#phprestclient" data-section="3">PHP REST Client</a></li>
-                            <li><a href="#websitesettings" data-section="4">Website Settings</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#blog" data-section="5">Blog</a>
-                    </li>
-<!--                     <li>
-                        <a href="#contact" data-section="6">Contact</a>
-                    </li>
- -->                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <div id="main">
-
-        <section class="intro-header">
-
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="intro-message">
-                            <h1>Sylvain V.</h1>
-                            <h3>Web developer front &amp; back end from Paris</h3>
-                            <hr class="intro-divider">
-                            <ul class="list-inline intro-social-buttons">
-                                <li class="wow fadeInUp" data-wow-delay="1s">
-                                    <a href="https://github.com/sylouuu" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span>Github</span></a>
-                                </li>
-                                <li class="wow fadeInUp" data-wow-delay="2s">
-                                    <a href="https://twitter.com/sylwebdev" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span>Twitter</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <img src="https://avatars1.githubusercontent.com/u/2300259?s=460" alt="" class="my-pic img-responsive wow rotateIn">
+
+                    <a class="navbar-brand" href="./">Sylvain V.</a>
                 </div>
 
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#about" data-section="1">About</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Projects <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#desoslide" data-section="2">desoSlide</a></li>
+                                <li><a href="#phprestclient" data-section="3">PHP REST Client</a></li>
+                                <li><a href="#websitesettings" data-section="4">Website Settings</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#blog" data-section="5">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact" data-section="6">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
             <!-- /.container -->
+        </nav>
 
-        </section>
-        <!-- /.intro-header -->
+        <div id="main">
 
-        <section class="content-section-a">
+            <section class="intro-header">
 
-            <div class="container">
+                <div class="container">
 
-                <div class="row">
-                    <div class="col-lg-5 col-sm-5">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-
-                        <h2 class="section-heading">desoSlide</h2>
-
-                        <p class="lead">
-                            desoSlide is a lightweight jQuery plugin for creating images slider with thumbnails.
-                        </p>
-                        <p class="lead">
-                            You can see a demo here. Click on any thumbnail.
-                        </p>
-
-                        <ul class="list-inline banner-link-buttons">
-                            <li>
-                                <a href="https://github.com/sylouuu/desoslide" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span>Project on GitHub</span></a>
-                            </li>
-                            <li>
-                                <a href="http://sylouuu.github.io/desoslide/" class="btn btn-success btn-lg" target="_blank"><i class="fa fa-external-link fa-fw"></i> <span>Visit website</span></a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-1 col-sm-6">
-
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <div id="desoslide_demo_main_image" class="inline-block"></div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <ul id="desoslide_demo_thumbs" class="list-inline">
-                                    <li>
-                                        <a href="assets/img/projects/desoslide/demo/city.jpg"><img src="assets/img/projects/desoslide/demo/city_thumb.jpg" alt="city" data-desoslide-caption="City"></a>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="intro-message">
+                                <h1>Sylvain V.</h1>
+                                <h3>Web developer front &amp; back end from Paris</h3>
+                                <hr class="intro-divider">
+                                <ul class="list-inline intro-social-buttons">
+                                    <li class="wow fadeInUp" data-wow-delay="1s">
+                                        <a href="https://github.com/sylouuu" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span>Github</span></a>
                                     </li>
-                                    <li>
-                                        <a href="assets/img/projects/desoslide/demo/building.jpg"><img src="assets/img/projects/desoslide/demo/building_thumb.jpg" alt="building" data-desoslide-caption="Building"></a>
-                                    </li>
-                                    <li>
-                                        <a href="assets/img/projects/desoslide/demo/eiffel.jpg"><img src="assets/img/projects/desoslide/demo/eiffel_thumb.jpg" alt="eiffel" data-desoslide-caption="Eiffel tower"></a>
-                                    </li>
-                                    <li>
-                                        <a href="assets/img/projects/desoslide/demo/bridge.jpg"><img src="assets/img/projects/desoslide/demo/bridge_thumb.jpg" alt="bridge" data-desoslide-caption="Bridge"></a>
+                                    <li class="wow fadeInUp" data-wow-delay="2s">
+                                        <a href="https://twitter.com/sylwebdev" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span>Twitter</span></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
+                <!-- /.container -->
 
-            </div>
-            <!-- /.container -->
+            </section>
+            <!-- /.intro-header -->
 
-        </section>
-        <!-- /.content-section-a -->
+            <section class="content-section-a">
 
-        <section class="content-section-b">
+                <div class="container">
 
-            <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-sm-5">
+                            <hr class="section-heading-spacer">
+                            <div class="clearfix"></div>
 
-                <div class="row">
-                    <div class="col-lg-6 col-sm-push-6 col-sm-6">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
+                            <h2 class="section-heading">desoSlide</h2>
 
-                        <h2 class="section-heading">PHP REST Client</h2>
+                            <p class="lead">
+                                desoSlide is a lightweight jQuery plugin for creating images slider with thumbnails.
+                            </p>
+                            <p class="lead">
+                                You can see a demo here. Click on any thumbnail.
+                            </p>
 
-                        <p class="lead">
-                            With this library, it's so much easier to submit HTTP requests through PHP.
-                        </p>
-                        <p class="lead">
-                            GET, POST, UPDATE and DELETE HTTP verbs are supported. The server must return a JSON format response.
-                        </p>
+                            <ul class="list-inline banner-link-buttons">
+                                <li>
+                                    <a href="https://github.com/sylouuu/desoslide" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span>Project on GitHub</span></a>
+                                </li>
+                                <li>
+                                    <a href="http://sylouuu.github.io/desoslide/" class="btn btn-success btn-lg" target="_blank"><i class="fa fa-external-link fa-fw"></i> <span>Visit website</span></a>
+                                </li>
+                            </ul>
 
-                        <ul class="list-inline banner-link-buttons">
-                            <li>
-                                <a href="https://github.com/sylouuu/php-rest-client" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span>Project on GitHub</span></a>
-                            </li>
-                        </ul>
+                        </div>
+                        <div class="col-lg-6 col-lg-offset-1 col-sm-6">
 
+                            <div class="row">
+                                <div class="col-lg-12 text-center">
+                                    <div id="desoslide_demo_main_image" class="inline-block"></div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 text-center">
+                                    <ul id="desoslide_demo_thumbs" class="list-inline">
+                                        <li>
+                                            <a href="assets/img/projects/desoslide/demo/city.jpg"><img src="assets/img/projects/desoslide/demo/city_thumb.jpg" alt="city" data-desoslide-caption="City"></a>
+                                        </li>
+                                        <li>
+                                            <a href="assets/img/projects/desoslide/demo/building.jpg"><img src="assets/img/projects/desoslide/demo/building_thumb.jpg" alt="building" data-desoslide-caption="Building"></a>
+                                        </li>
+                                        <li>
+                                            <a href="assets/img/projects/desoslide/demo/eiffel.jpg"><img src="assets/img/projects/desoslide/demo/eiffel_thumb.jpg" alt="eiffel" data-desoslide-caption="Eiffel tower"></a>
+                                        </li>
+                                        <li>
+                                            <a href="assets/img/projects/desoslide/demo/bridge.jpg"><img src="assets/img/projects/desoslide/demo/bridge_thumb.jpg" alt="bridge" data-desoslide-caption="Bridge"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="col-lg-5 col-sm-pull-6 col-sm-6">
-                        <img class="img-responsive" src="assets/img/projects/php-rest-client/restful_api.jpg" alt="php-rest-client">
-                    </div>
+
                 </div>
+                <!-- /.container -->
 
-            </div>
-            <!-- /.container -->
+            </section>
+            <!-- /.content-section-a -->
 
-        </section>
-        <!-- /.content-section-b -->
+            <section class="content-section-b">
 
-        <section class="content-section-a">
+                <div class="container">
 
-            <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-push-6 col-sm-6">
+                            <hr class="section-heading-spacer">
+                            <div class="clearfix"></div>
 
-                <div class="row">
-                    <div class="col-lg-5 col-sm-5">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
+                            <h2 class="section-heading">PHP REST Client</h2>
 
-                        <h2 class="section-heading">Website Settings</h2>
+                            <p class="lead">
+                                With this library, it's so much easier to submit HTTP requests through PHP.
+                            </p>
+                            <p class="lead">
+                                GET, POST, UPDATE and DELETE HTTP verbs are supported. The server must return a JSON format response.
+                            </p>
 
-                        <p class="lead">
-                            This Chrome extension allows you to automatically set some things on a website, such as renaming the title, changing the icon or pinning the tab.
-                        </p>
-                        <p class="lead">
-                            On the first picture, you can see the result and the configuration on the second one.
-                        </p>
+                            <ul class="list-inline banner-link-buttons">
+                                <li>
+                                    <a href="https://github.com/sylouuu/php-rest-client" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span>Project on GitHub</span></a>
+                                </li>
+                            </ul>
 
-                        <ul class="list-inline banner-link-buttons">
-                            <li>
-                                <a href="https://github.com/sylouuu/website-settings" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span>Project on GitHub</span></a>
-                            </li>
-                            <li>
-                                <a href="https://chrome.google.com/webstore/detail/website-settings/hcbgadmbdkiilgpifjgcakjehmafcjai" class="btn btn-success btn-lg" target="_blank"><i class="fa fa-external-link fa-fw"></i> <span>Chrome Web Store</span></a>
-                            </li>
-                        </ul>
-
+                        </div>
+                        <div class="col-lg-5 col-sm-pull-6 col-sm-6">
+                            <img class="img-responsive" src="assets/img/projects/php-rest-client/restful_api.jpg" alt="php-rest-client">
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-lg-offset-1 col-sm-6">
-                        <img class="img-responsive" src="assets/img/projects/website-settings/tabs.png" alt="tabs">
 
-                        <hr class="section-heading-spacer website-settings-divider">
-
-                        <img class="img-responsive" src="assets/img/projects/website-settings/options.png" alt="options">
-                    </div>
                 </div>
+                <!-- /.container -->
 
-            </div>
-            <!-- /.container -->
+            </section>
+            <!-- /.content-section-b -->
 
-        </section>
-        <!-- /.content-section-a -->
+            <section class="content-section-a">
 
-        <section class="blog">
+                <div class="container">
 
-            <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-sm-5">
+                            <hr class="section-heading-spacer">
+                            <div class="clearfix"></div>
 
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2>I'm writing some stuff about web development on my blog, take a look.</h2>
+                            <h2 class="section-heading">Website Settings</h2>
+
+                            <p class="lead">
+                                This Chrome extension allows you to automatically set some things on a website, such as renaming the title, changing the icon or pinning the tab.
+                            </p>
+                            <p class="lead">
+                                On the first picture, you can see the result and the configuration on the second one.
+                            </p>
+
+                            <ul class="list-inline banner-link-buttons">
+                                <li>
+                                    <a href="https://github.com/sylouuu/website-settings" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span>Project on GitHub</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://chrome.google.com/webstore/detail/website-settings/hcbgadmbdkiilgpifjgcakjehmafcjai" class="btn btn-success btn-lg" target="_blank"><i class="fa fa-external-link fa-fw"></i> <span>Chrome Web Store</span></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-lg-6 col-lg-offset-1 col-sm-6">
+                            <img class="img-responsive" src="assets/img/projects/website-settings/tabs.png" alt="tabs">
+
+                            <hr class="section-heading-spacer website-settings-divider">
+
+                            <img class="img-responsive" src="assets/img/projects/website-settings/options.png" alt="options">
+                        </div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ul class="list-inline banner-link-buttons">
-                            <li>
-                                <a href="http://chez-syl.fr/" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-book fa-fw"></i> <span>Visit my blog</span></a>
-                            </li>
-                        </ul>
+                </div>
+                <!-- /.container -->
+
+            </section>
+            <!-- /.content-section-a -->
+
+            <section class="blog">
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>I'm writing some stuff about web development on my blog, take a look.</h2>
+                        </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-inline banner-link-buttons">
+                                <li>
+                                    <a href="http://chez-syl.fr/" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-book fa-fw"></i> <span>Visit my blog</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
+                <!-- /.container -->
 
-            </div>
-            <!-- /.container -->
+            </section>
+            <!-- /.blog -->
 
-        </section>
-        <!-- /.blog -->
+            <section class="content-section-a contact">
 
-    </div>
+                <div class="container">
 
+                    <div class="row">
+                        <div class="col-lg-5 col-sm-5">
+                            <hr class="section-heading-spacer">
+                            <div class="clearfix"></div>
 
-    <!-- Javascript libraries -->
-    <script src="assets/js/libs/jquery.min.js"></script>
-    <script src="assets/js/libs/bootstrap.min.js"></script>
-    <script src="assets/js/libs/wow.min.js"></script>
-    <script src="assets/js/libs/jquery.onepage-scroll.min.js"></script>
-    <script src="assets/js/libs/jquery.desoslide.min.js"></script>
+                            <h2 class="section-heading">Contact me</h2>
 
-    <script src="assets/js/ready.js"></script>
+                            <p class="lead">
+                                You can send me a tweet or writing an email from my blog.
+                            </p>
 
-</body>
+                            <ul class="list-inline banner-link-buttons">
+                                <li>
+                                    <a href="https://twitter.com/sylwebdev" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span>Twitter</span></a>
+                                </li>
+                                <li>
+                                    <a href="http://chez-syl.fr/contact" class="btn btn-primary btn-lg" target="_blank"><i class="fa fa-envelope-o fa-fw"></i> <span>Email</span></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-lg-6 col-lg-offset-1 col-sm-6">
+                            <hr class="section-heading-spacer">
+                            <div class="clearfix"></div>
+
+                            <h2 class="section-heading">Share me</h2>
+
+                            <p class="lead">
+                                If you appreciate this page or my work, feel free to share me on social networks.
+                            </p>
+
+                            <ul class="list-inline banner-link-buttons">
+                                <li>
+                                    <a href="https://twitter.com/share?url=http://sylouuu.github.io/&amp;text=Sylvain%20V.%20is%20a%20french%20Web%20developer%20front-back%20end&amp;via=sylwebdev" class="btn btn-default btn-lg share-twitter" data-toggle="tooltip" data-title="Tweet" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://sylouuu.github.io/" class="btn btn-default btn-lg share-facebook" data-toggle="tooltip" data-title="Share on Facebook" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://plus.google.com/share?url=http://sylouuu.github.io/" class="btn btn-default btn-lg share-google-plus" data-toggle="tooltip" data-title="Share on Google+" target="_blank"><i class="fa fa-google-plus fa-fw"></i></a>
+                                </li>
+                                  <li>
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://sylouuu.github.io/&amp;title=Sylvain%20V.%20is%20a%20french%20Web%20developer%20front-back%20end" class="btn btn-default btn-lg share-linkedin" data-toggle="tooltip" data-title="Share on LinkedIn" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container -->
+
+            </section>
+            <!-- /.content-section-a -->
+
+        </div>
+        <!-- /#main -->
+
+        <!-- Javascript libraries -->
+        <script src="assets/js/libs/jquery.min.js"></script>
+        <script src="assets/js/libs/bootstrap.min.js"></script>
+        <script src="assets/js/libs/wow.min.js"></script>
+        <script src="assets/js/libs/jquery.onepage-scroll.min.js"></script>
+        <script src="assets/js/libs/jquery.desoslide.min.js"></script>
+
+        <script src="assets/js/ready.js"></script>
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-27524593-4']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+    </body>
 
 </html>
