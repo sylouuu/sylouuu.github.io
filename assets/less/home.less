@@ -110,6 +110,12 @@ body, html {
                     margin-bottom: 20px;
                 }
 
+                #desoslide_demo_thumbs {
+                    li {
+                        padding: 5px !important;
+                    }
+                }
+
                 .website-settings-divider {
                     width: 100%;
                 }
@@ -139,10 +145,6 @@ body, html {
                         font-size: 3em;
                     }
                 }
-
-                ul.banner-link-buttons {
-                    margin-top: 30px;
-                }
             }
 
             &.contact {
@@ -161,6 +163,18 @@ body, html {
 
                     &.share-linkedin {
                         color: @linkedin;
+                    }
+                }
+            }
+
+            ul.banner-link-buttons {
+                margin-top: 30px;
+
+                li {
+
+                    @media (max-width: @screen-sm) {
+                        padding-left: 0;
+                        padding-bottom: 5px;
                     }
                 }
             }
