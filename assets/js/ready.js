@@ -4,7 +4,7 @@ $(function() {
     $('#main').onepage_scroll({
        pagination: false,
        loop: true,
-       responsiveFallback: 600
+       responsiveFallback: 800
     });
 
     // Navbar links
