@@ -48,124 +48,134 @@ body, html {
         }
     }
 
-    section {
+    #main {
 
-        &.intro-header {
-            padding-top: 50px;
-            padding-bottom: 50px;
-            color: @white;
-            background: url(../img/intro-bg.jpg) no-repeat center center;
-            background-size: cover;
-            text-align: center;
+        &.onepage-wrapper {
+            @media (max-width: @screen-sm) {
+                height: auto;
+            }
+        }
 
-            .intro-message {
-                position: relative;
-                padding-top: 20%;
-                padding-bottom: 20%;
+        section {
 
-                > h1 {
-                    margin: 0;
-                    font-size: 5em;
-                    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+            &.intro-header {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                color: @white;
+                background: url(../img/intro-bg.jpg) no-repeat center center;
+                background-size: cover;
+                text-align: center;
+
+                .intro-message {
+                    position: relative;
+                    padding-top: 20%;
+                    padding-bottom: 20%;
+
+                    > h1 {
+                        margin: 0;
+                        font-size: 5em;
+                        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+
+                        @media (max-width: @screen-sm) {
+                            font-size: 3em;
+                        }
+                    }
+
+                    > h3 {
+                        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+                    }
+
+                    .intro-divider {
+                        width: 400px;
+                        border-top: 1px solid @white;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+                        @media (max-width: @screen-sm) {
+                            width: 100%;
+                        }
+                    }
 
                     @media (max-width: @screen-sm) {
+                        padding-bottom: 15%;
+                    }
+                }
+            }
+
+            &.content-section-a {
+                background-color: @white;
+                padding-top: 100px;
+                padding-bottom: 100px;
+
+                #desoslide_demo_main_image {
+                    margin-bottom: 20px;
+                }
+
+                .website-settings-divider {
+                    width: 100%;
+                }
+            }
+
+            &.content-section-b {
+                border-top: 1px solid @gray-light;
+                border-bottom: 1px solid @gray-light;
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            &.blog {
+                padding: 100px 0;
+                color: @white;
+                background: url(../img/banner-bg.jpg) no-repeat center center;
+                background-size: cover;
+
+                h2 {
+                    margin: 0;
+                    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+                    font-size: 3em;
+
+                    @media (max-width: @screen-sm) {
+                        margin: 0;
+                        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
                         font-size: 3em;
                     }
                 }
 
-                > h3 {
-                    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+                ul.banner-link-buttons {
+                    margin-top: 30px;
                 }
+            }
 
-                .intro-divider {
-                    width: 400px;
-                    border-top: 1px solid @white;
-                    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            &.contact {
+                a {
+                    &.share-twitter {
+                        color: @twitter;
+                    }
 
-                    @media (max-width: @screen-sm) {
-                        width: 100%;
+                    &.share-facebook {
+                        color: @facebook;
+                    }
+
+                    &.share-google-plus {
+                        color: @google-plus;
+                    }
+
+                    &.share-linkedin {
+                        color: @linkedin;
                     }
                 }
-
-                @media (max-width: @screen-sm) {
-                    padding-bottom: 15%;
-                }
-            }
-        }
-
-        &.content-section-a {
-            background-color: @white;
-            padding-top: 100px;
-            padding-bottom: 100px;
-
-            #desoslide_demo_main_image {
-                margin-bottom: 20px;
             }
 
-            .website-settings-divider {
-                width: 100%;
-            }
-        }
-
-        &.content-section-b {
-            border-top: 1px solid @gray-light;
-            border-bottom: 1px solid @gray-light;
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-
-        &.blog {
-            padding: 100px 0;
-            color: @white;
-            background: url(../img/banner-bg.jpg) no-repeat center center;
-            background-size: cover;
-
-            h2 {
-                margin: 0;
-                text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-                font-size: 3em;
-
-                @media (max-width: @screen-sm) {
-                    margin: 0;
-                    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-                    font-size: 3em;
-                }
+            .section-heading-spacer {
+                border-top: 3px solid @gray-light;
+                width: 200px;
+                float: left;
             }
 
-            ul.banner-link-buttons {
-                margin-top: 30px;
+            .section-heading {
+                margin-bottom: 30px;
             }
-        }
-
-        &.contact {
-            a {
-                &.share-twitter {
-                    color: @twitter;
-                }
-
-                &.share-facebook {
-                    color: @facebook;
-                }
-
-                &.share-google-plus {
-                    color: @google-plus;
-                }
-
-                &.share-linkedin {
-                    color: @linkedin;
-                }
-            }
-        }
-
-        .section-heading-spacer {
-            border-top: 3px solid @gray-light;
-            width: 200px;
-            float: left;
-        }
-
-        .section-heading {
-            margin-bottom: 30px;
         }
     }
+
 
 }
