@@ -15,20 +15,15 @@ $(function() {
     });
 
     // desoSlide demo
-    $('#desoslide_demo_thumbs').desoSlide({
-        main: {
-            container: '#desoslide_demo_main_image',
-            cssClass: 'img-responsive'
+    $('#slideshow').desoSlide({
+        thumbs: $('#desoslide_demo_thumbs li > a'),
+        effect: {
+            provider: 'animate',
+            name: 'sideFadeBig'
         },
-        auto: {
-            start: false
-        },
-        effect: 'sideFadeBig',
         overlay: 'hover',
-        caption: true,
         controls: {
-            enable: false,
-            keys: false
+            show: false
         }
     });
 
